@@ -9,7 +9,7 @@ function xPro() {
 
     if (moodValue >= 70 ) {
         if (energyValue < 65 && energyValue>= 35) {
-            x+=0.3; }
+            x+=0.25; }
         else if (energyValue < 35) {
             x+=1;}
     }
@@ -17,7 +17,7 @@ function xPro() {
     else if (moodValue < 70 && moodValue >= 60) {
         x+= 0.1; 
         if (energyValue < 65 && energyValue>= 35) {
-            x+=0.3; }
+            x+=0.25; }
         else if (energyValue < 35) {
             x+=1;}
     }
@@ -25,7 +25,7 @@ function xPro() {
     else if (moodValue < 60 && moodValue >= 50) {
         x+= 0.2; 
         if (energyValue < 65 && energyValue>= 35) {
-            x+=0.3;}
+            x+=0.25;}
         else if (energyValue < 35) {
             x+=1;}}
   
