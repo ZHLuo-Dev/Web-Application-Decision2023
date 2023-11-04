@@ -72,7 +72,7 @@ function applyChoiceEffect(choice, currentDay) {
             switch (choice) {
                 case 1: // Go to work
                     updateRemainingTasksAndBonus();
-                    changeMood(-30);
+                    changeMood(-3);
                     changeEnergy(-3);
                     changeCoins(35);
                     updateTooltips();
@@ -80,7 +80,7 @@ function applyChoiceEffect(choice, currentDay) {
                 case 2: // Skip work
 
                     changeMood(3);
-                    changeEnergy(5);
+                    changeEnergy(6);
                     skipWork(1);
                     updateTooltips();
                     break;
@@ -90,14 +90,14 @@ function applyChoiceEffect(choice, currentDay) {
                 case 1: // Work overtime for a whole day!
 
                     updateRemainingTasksAndBonus();
-                    changeMood(-10);
+                    changeMood(-6);
                     changeEnergy(-6);
-                    changeCoins(55);
+                    changeCoins(60);
                     updateTooltips();
                     break;
                 case 2: // Hang out and have fun (RIP my savings)
 
-                    changeMood(16);
+                    changeMood(20);
                     changeEnergy(-3);
                     changeCoins(-60);
                     updateTooltips();
@@ -105,19 +105,19 @@ function applyChoiceEffect(choice, currentDay) {
                 case 3: // Dive into a day of fitness.
 
                     changeMood(3);
-                    changeEnergy(-15);
+                    changeEnergy(-18);
                     increaseEnergyMax(10);
                     break;
                 case 4: // Lazy Day: Just lay in bed.
 
                     changeMood(6);
-                    changeEnergy(30);
+                    changeEnergy(42);
                     changeEfficiency(-1); 
                     updateTooltips();
                     break;
                 case 5: // Enhance your Expertise.
 
-                    changeEnergy(-6);
+                    changeEnergy(-9);
                     changeEfficiency(2);
                     changeMood(-3);
                     updateTooltips();
@@ -127,7 +127,7 @@ function applyChoiceEffect(choice, currentDay) {
         else if (currentDay ==0) {
             switch (choice) {
                 case 1: // Hang out and have fun (RIP my savings)
-                    changeMood(16);
+                    changeMood(20);
                     changeEnergy(-3);
                     changeCoins(-60);
                     updateTooltips();
@@ -135,19 +135,19 @@ function applyChoiceEffect(choice, currentDay) {
                 case 2: // Dive into a day of fitness.
 
                     changeMood(3);
-                    changeEnergy(-15);
+                    changeEnergy(-18);
                     increaseEnergyMax(10);
                     break;
                 case 3: // Lazy Day: Just lay in bed.
 
                     changeMood(6);
-                    changeEnergy(30);
+                    changeEnergy(42);
                     changeEfficiency(-1);
                     updateTooltips();
                     break;
                 case 4: // Enhance your Expertise.
 
-                    changeEnergy(-6);
+                    changeEnergy(-9);
                     changeMood(-3);
                     changeEfficiency(2);
                     updateTooltips();
