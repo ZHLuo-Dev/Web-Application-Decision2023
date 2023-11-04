@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互动选择</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  
+</head>
+<body>
+    <div id="topBox" class="additional-box1">
+        <div class="title"></div><div class="game-time-t">The Story Begins</div> <div class="game-time">Week 1 Monday</div>
+    </div>
+
+    <div id="content">
+     
+
+        <p id="storyText"></p>
+         <div id="options">
+            <div id="initOption" style="display: none;">
+                <button onclick="makeChoice('init')">Oh.</button>
+            </div>
+            <div id="weekdayOptions">
+                <button onclick="makeChoice(1)">Go to work.</button>
+                <button onclick="makeChoice(2)">Skip work.</button>
+            </div>
+            <div id="saturdayOptions" style="display: none;">
+                <button onclick="makeChoice(1)">Work overtime for a whole day!</button>
+                <button onclick="makeChoice(2)">Hang out and have fun (RIP my savings).</button>
+                <button onclick="makeChoice(3)">Dive into a day of fitness.</button>
+                <button onclick="makeChoice(4)">Lazy Day: Just lay in bed <span style='font-size:22px;'>🛌</span>.</button>
+                <button onclick="makeChoice(5)">Enhance my Expertise.</button>
+            </div>
+            <div id="sundayOptions" style="display: none;">
+                <button onclick="makeChoice(1)">Hang out and have fun (RIP my savings).</button>
+                <button onclick="makeChoice(2)">Dive into a day of fitness.</button>
+                <button onclick="makeChoice(3)">Lazy Day: Just lay in bed <span style='font-size:22px;'>🛌</span>.</button>
+                <button onclick="makeChoice(4)">Enhance my Expertise.</button>
+            </div>
+            <!-- Month End Choices -->
+            <div id="monthEndChoices" style="display: none;">
+                <button onclick="makeChoice('monthEndAccept')">Alright...</button>
+                <button onclick="makeChoice('monthEndThanks')">Thanks, I gave it my all!</button>
+                <button onclick="makeChoice('monthEndAwesome')">Awesome!</button>
+            </div>
+            <!-- END  -->
+            <div id="normalEnd" style="display: none;">
+                <button onclick="restartGame()">Restart the game.</button>
+            </div>
+            <!-- gift  -->
+            <div id="phonecall1" style="display: none;">
+                <button id="yes1button" onclick="yes1()">Book a flight ($350).</button>
+                <button onclick="makeChoice('no1')">I better focus on my tasks for now.</button>
+            </div>
+            <div id="phonecall2" style="display: none;">
+                <button id="yes2button" onclick="yes2()">Book a flight back home.</button>
+                <button onclick="makeChoice('no2')">I better focus on my tasks for now.</button>
+            </div>
+            <div id="phonecallEnd" style="display: none;">
+                <button onclick="restartGame()">coollllll.</button>
+            </div>
+         </div>
+     </div>
+
+    <div id="bottomBox2" class="additional-box2">
+        <div id="statusMessages"></div> 
+    </div>
+    
+        <div class="right-panel">
+            <div class="attributes-container">
+                <!-- Gold Coin -->
+                <div class="attribute">
+                    <i class="fa-solid fa-coins fa-beat fa-xl" style="color: #cebd08;"></i>   
+                     <span id="coinCount">100</span>
+                     <i class="fa-solid fa-question-circle" id="coinTooltip"></i> 
+                </div>
+                <!-- Efficiency -->
+                <div class="attribute">
+                    <i class="fa-solid fa-gear fa-spin fa-spin-reverse fa-xl" style="color: #030b35;"></i> 
+                     <span id="taskCount">14</span>   
+                     <i class="fa-solid fa-question-circle" id="taskTooltip"></i>
+                </div>
+                    <div class="container-fluid p-0">
+                        <!-- Mood -->
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa-regular fa-face-smile fa-xl icon-style" style="color: #f12323; display: none;"></i>
+                            <i class="fa-regular fa-face-grimace fa-xl icon-style" style="color: #aa0707; display: none;"></i>
+                            <i class="fa-regular fa-face-frown fa-xl icon-style" style="color: #660404; display: none;"></i>
+                            <i class="fa-regular fa-face-dizzy fa-shake fa-xl icon-style" style="color: #310202; display: none;"></i>
+                            <div class="progress w-100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated mood-progress" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <i class="fa-solid fa-question-circle" title="This represents your mood."style="font-size: 18px;"></i>
+                        </div>
+                        <br>
+                    <!-- Energy -->
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-battery-full fa-xl icon-style" style="color: #1caf08; display: none;"></i>
+                        <i class="fa-solid fa-battery-half fa-xl icon-style" style="color: #f8df00; display: none;"></i>
+                        <i class="fa-solid fa-battery-quarter fa-fade fa-xl icon-style" style="color: #e40505; display: none;"></i>
+                            <div class="progress w-100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated energy-progress" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <i class="fa-solid fa-question-circle" title="This represents your energy." style="font-size: 18px;"></i>
+                    </div>
+                </div>
+             </div>
+        </div>
+            <!-- no work -->
+    <div id="skipover">
+        <p id="skipText">Due to your absence for three consecutive days, the company has decided to terminate your employment.</p>
+        <div id="skipoptions">
+        <button onclick="restartGame()">Restart Game.</button>
+        </div>
+    </div>
+   
+    <div id="doctor">
+        <p id="skipText"><span style='font-size:22px;'>🤧😢</span>You're experiencing severe mental distress and need professional help.<span style='font-size:22px;'>😞😭</span><br><br>A visit to the therapist will cost <span class='yellow-flash'>$180</span>.</p>
+        <div id="skipoptions">
+        <button onclick="seeDoc()">Accept.</button>
+        </div>
+    </div>
+    
+    <div id="doctor2">
+        <p id="skipText"><span style='font-size:22px;'>🙂</span>You are feeling better.</p>
+        <div id="skipoptions">
+        <button onclick="seeDoc2()">Continue.</button>
+        </div>
+    </div>
+
+    <div class="left-panel">
+        <h2>  Monthly Data Summary:</h2>
+        <p>1. Completed Tasks: <span id="completedTasks">0</span></p>
+        <p>2. Remaining Tasks: <span id="remainingTasks">300</span></p>
+        <p>3. Predicted bonus: <span id="predictedBonus">0</span></p>
+    </div>
+    
+    <script src="js/animation.js"></script>
+
+    <script>
+    window.onload = function() {
+        var storyText = "A charming cat 😼 has captured your affection, and you've set a goal: earn 2023 gold coins within two months to buy it.";
+        typeWriterEffect('storyText', storyText, showOptions,'initOption'); 
+        updateTooltips();
+        updateStatusMessages()
+    };</script>
+            <script src="js/makeChoice.js"></script>
+            <script src="js/statusmood.js"></script>
+            <script src="js/mood.js"></script>
+            <script src="js/energy.js"></script>
+            <script src="js/moodenergyChange.js"></script>
+            <script src="js/choiceEffects.js"></script>
+            <script src="js/dateLogic.js"></script>
+            <script src="js/description_var.js"></script>
+            <script src="js/gift.js"></script>
+            <script src="js/monthEnd.js"></script>
+            <script src="js/gameEnd.js"></script>
+            <script src="js/restartGame.js"></script>
+            <script src="js/fourInfo.js"></script>
+            <script src="js/init.js"></script>
+
+ 
+
+</body>
+</html>

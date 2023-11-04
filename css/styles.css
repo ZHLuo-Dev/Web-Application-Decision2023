@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+body {
+    
+    font-family: 'Press Start 2P', cursive !important;
+    text-align: center;
+    max-width: 2000px;  
+    
+    background: radial-gradient(circle at 50%  -450px, #e7ecf5 0.5%,#327b86 40% ,#007A8C 70%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#content {
+    background-color: #AEDFF7; 
+    border: 3px solid black; /* 更粗的边框 */
+    padding:14px 18px 5px 18px;
+    width: 720px; 
+    margin: 0 auto; /* 水平居中 */
+    min-height: 2px; 
+   
+}
+@keyframes flipIn {
+    from { transform: rotateX(-90deg); opacity: 0; }
+    to { transform: rotateX(0deg); opacity: 1; }
+  }
+  
+  @keyframes textReveal {
+    0% { 
+      mask-image: linear-gradient(to right, transparent, black 2%, transparent 100%);
+    }
+    100% { 
+      mask-image: linear-gradient(to right, transparent, black 100%, transparent 100%);
+    }
+  }
+  
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 2;
+    }
+  }
+  
+#storyText {
+    font-size:16px;
+     /* 固定大小 */
+    overflow: hidden; /* 如果文本过多，显示滚动条 */
+    text-align: left;
+    line-height: 1.4; 
+    word-spacing: 0;
+
+}
+
+#options {
+    margin-top: 65px; 
+}
+
+#options button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #88d2f7;
+    border: 3px solid #00090e;
+    margin-bottom: 8px; /* 仅在按钮底部增加空间 */
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    height: 47px;
+    font-size:16.5px;
+    padding: 3px 1px 3px 1px;
+}
+
+#options button:hover {
+    background-color: #9618af; /* 鼠标悬停时的背景色 */
+}
+.additional-box1 {
+    background-color:#AEDFF7;
+    border: 3px solid black; 
+    height: 50px; 
+    width: 720px; 
+    margin: 20px auto; 
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center; 
+    margin: 20px auto;
+    padding: 0 18px;
+}
+
+.additional-box2 {
+    background-color:#AEDFF7;
+    border: 3px solid black; 
+    height: 180px; 
+    width: 720px; 
+    margin : 20px auto;
+    padding: 15px 16px 15px 16px;
+    display: flex;
+    font-size:18px;
+
+
+}
+#statusMessages{
+   font-size: 15px;
+   text-align: left !important;
+   line-height: 0.9; 
+   word-spacing: 0;
+}
+
+.game-time {
+    text-align: right;
+    font-size: 15px; 
+    padding: 0; 
+    margin: 0;
+    min-width: 0;
+    flex-grow: 1;
+
+}
+.game-time-t{
+    text-align: left;
+    flex-grow: 1;
+    padding: 0; 
+    margin: 0;
+    min-width: 0;
+    font-size: 16px; 
+}
+.right-panel {
+    position: absolute;
+    top: 10.5%;
+    right: 13%;
+    left: 75%;
+    bottom: 80%;
+    animation: slideInFromRight 1.5s ease-in-out;
+}
+
+.attributes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid black; /* 加上这行来创建框框的边框 */
+    padding: 10px; /* 加上这行为框框添加内边距 */
+    border-radius: 5px; /* 加上这行为框框添加轻微的圆角 */
+    background-color: #AEDFF7; 
+}
+
+.attribute {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    margin-bottom: 30px;
+
+}
+
+.icon-style {
+    width: 30px;
+    margin-right: 17px;  /* 设置图标和进度条之间的间距 */
+}
+
+.progress {
+    background-color: #09283d !important; /* 进度条的背景色 */
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px; /* 圆角 */
+    height: 25px !important;
+    width: 200px; /* 进度条的宽度 */
+    overflow: hidden; /* 为了确保内部元素不超出此元素 */
+}
+.fa-question-circle {
+    display: inline-block;
+    margin-left: 15px;  /* 或者你需要的任何间距 */
+}
+
+.progress-bar {
+    background-color: #08c537 !important; /* 已完成的部分的颜色 */
+    border-radius: 0px; /* 圆角 */
+    height: 100%;
+    font-size: 11px;
+    color: #d4daa2 !important;
+    text-align: center;
+}
+
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slide-from-center {
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.left-panel {
+    position: absolute;
+    top: 10.5%;
+    right: 75%;
+    left: 3%;
+    color: rgb(255, 255, 255); 
+    background-color: #323f02;  /* 背景颜色 */
+    padding: 10px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    text-align: left;
+    animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+.left-panel h2 {
+    text-align: center;
+    font-size: 17px;
+}
+.bonus-flash {
+    color: red;
+    animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+    from { opacity: 1; }
+    to { opacity: 0.7; }
+}
+
+.yellow-flash {
+    color: red;
+    
+}
+.colorFine {
+    color: red;  
+}
+.colorBonus {
+    color: green;  
+}
+
+
+
+#skipover {
+    display: none; 
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    left: 30%;
+    bottom:40%;
+    background-color:rgb(0, 0, 0);
+    border: 3px solid rgb(238, 230, 230); /* 更粗的边框 */
+    padding:18px 25px 5px 25px;
+    color: white;
+  }
+
+#doctor{
+    display: none; 
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    left: 30%;
+    bottom:40%;
+    background-color:rgb(0, 0, 0);
+    border: 3px solid rgb(238, 230, 230); /* 更粗的边框 */
+    padding:18px 25px 5px 25px;
+    color: white;
+}
+#doctor2{
+    display: none; 
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    left: 30%;
+    bottom:40%;
+    background-color:rgb(0, 0, 0);
+    border: 3px solid rgb(238, 230, 230); /* 更粗的边框 */
+    padding:18px 25px 5px 25px;
+    color: white;}
+
+#skipText {
+   font-size:18px;
+   overflow: hidden; 
+   text-align: left;
+   line-height: 1.4; 
+   text-align: left;
+   word-spacing: 0;
+   text-align: left;
+   display: block;
+   cursor: pointer;
+  }
+#skipoptions {
+    margin-top: 125px;
+}
+#skipoptions button{
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(76, 139, 175); 
+    color: white;
+    padding: 3px 1px 3px 1px;
+    border: 3px solid rgb(238, 230, 230); 
+    width: 100%;
+    height: 50px;
+    font-size:19px;
+    
+    
+    text-align: center;
+  }
+  
+ #skipoptions button:hover {
+    background-color: #9618af; /* 深绿色 */
+  }
+
+
