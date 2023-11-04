@@ -72,15 +72,15 @@ function applyChoiceEffect(choice, currentDay) {
             switch (choice) {
                 case 1: // Go to work
                     updateRemainingTasksAndBonus();
-                    changeMood(-3);
-                    changeEnergy(-3);
+                    changeMood(-2);
+                    changeEnergy(-2);
                     changeCoins(35);
                     updateTooltips();
                     break;
                 case 2: // Skip work
 
-                    changeMood(3);
-                    changeEnergy(6);
+                    changeMood(4);
+                    changeEnergy(4);
                     skipWork(1);
                     updateTooltips();
                     break;
@@ -90,9 +90,9 @@ function applyChoiceEffect(choice, currentDay) {
                 case 1: // Work overtime for a whole day!
 
                     updateRemainingTasksAndBonus();
-                    changeMood(-6);
-                    changeEnergy(-6);
-                    changeCoins(60);
+                    changeMood(-8);
+                    changeEnergy(-8);
+                    changeCoins(65);
                     updateTooltips();
                     break;
                 case 2: // Hang out and have fun (RIP my savings)
