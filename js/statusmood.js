@@ -21,7 +21,7 @@ function updateStatusMessages() {
 
     let icon30 = document.createElement('i');
     icon30.className = 'fa-solid fa-question-circle';
-    icon30.setAttribute('title', 'Real Productivity Debuff: -30%');
+    icon30.setAttribute('title', 'Real Productivity Debuff: -25%');
 
     let icon100 = document.createElement('i');
     icon100.className = 'fa-solid fa-question-circle';
