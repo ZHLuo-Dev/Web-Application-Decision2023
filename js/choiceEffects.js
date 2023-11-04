@@ -72,7 +72,7 @@ function applyChoiceEffect(choice, currentDay) {
             switch (choice) {
                 case 1: // Go to work
                     updateRemainingTasksAndBonus();
-                    changeMood(-3);
+                    changeMood(-30);
                     changeEnergy(-3);
                     changeCoins(35);
                     updateTooltips();
