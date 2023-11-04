@@ -9,25 +9,25 @@ function xPro() {
 
     if (moodValue >= 70 ) {
         if (energyValue < 65 && energyValue>= 35) {
-            x+=0.25; }
+            x+=0.2; }
         else if (energyValue < 35) {
-            x+=1;}
+            x+=0.8;}
     }
 
     else if (moodValue < 70 && moodValue >= 60) {
-        x+= 0.1; 
+        x+= 0.08; 
         if (energyValue < 65 && energyValue>= 35) {
-            x+=0.25; }
+            x+=0.2; }
         else if (energyValue < 35) {
-            x+=1;}
+            x+=0.8;}
     }
 
     else if (moodValue < 60 && moodValue >= 50) {
-        x+= 0.2; 
+        x+= 0.15; 
         if (energyValue < 65 && energyValue>= 35) {
-            x+=0.25;}
+            x+=0.2;}
         else if (energyValue < 35) {
-            x+=1;}}
+            x+=0.8;}}
   
     if(x>=1) {x=1;}
     return x;
@@ -72,7 +72,7 @@ function applyChoiceEffect(choice, currentDay) {
             switch (choice) {
                 case 1: // Go to work
                     updateRemainingTasksAndBonus();
-                    changeMood(-2);
+                    changeMood(-3);
                     changeEnergy(-2);
                     changeCoins(35);
                     updateTooltips();
@@ -88,7 +88,6 @@ function applyChoiceEffect(choice, currentDay) {
         else if (currentDay ==6) {
             switch (choice) {
                 case 1: // Work overtime for a whole day!
-
                     updateRemainingTasksAndBonus();
                     changeMood(-8);
                     changeEnergy(-8);
@@ -120,6 +119,7 @@ function applyChoiceEffect(choice, currentDay) {
                     changeEnergy(-9);
                     changeEfficiency(2);
                     changeMood(-3);
+                    increaseMoodMax(5);
                     updateTooltips();
                     break;
             }}
@@ -150,6 +150,7 @@ function applyChoiceEffect(choice, currentDay) {
                     changeEnergy(-9);
                     changeMood(-3);
                     changeEfficiency(2);
+                    increaseMoodMax(5);
                     updateTooltips();
                     break;
             }}

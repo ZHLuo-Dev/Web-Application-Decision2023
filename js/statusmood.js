@@ -19,18 +19,24 @@ function updateStatusMessages() {
     icon20.className = 'fa-solid fa-question-circle';
     icon20.setAttribute('title', 'Real Productivity Debuff: -20%');
 
-    let icon30 = document.createElement('i');
-    icon30.className = 'fa-solid fa-question-circle';
-    icon30.setAttribute('title', 'Real Productivity Debuff: -25%');
+    let icon25 = document.createElement('i');
+    icon25.className = 'fa-solid fa-question-circle';
+    icon25.setAttribute('title', 'Real Productivity Debuff: -25%');
 
     let icon100 = document.createElement('i');
     icon100.className = 'fa-solid fa-question-circle';
-    icon100.setAttribute('title', 'Real Productivity Debuff: -100%');
+    icon100.setAttribute('title', 'Real Productivity Debuff: -90%');
 
     let e = energyMax-100;
     let icona = document.createElement('i');
     icona.className = 'fa-solid fa-question-circle';
     icona.setAttribute('title', 'Energy Cap Increased by '+ e +' %.');
+
+    let m = moodMax-100;
+    let iconb = document.createElement('i');
+    icona.className = 'fa-solid fa-question-circle';
+    icona.setAttribute('title', 'Mood Cap Increased by '+ e +' %.');
+
 
 
     let moodValue = parseFloat(document.querySelector(".progress-bar").getAttribute("aria-valuenow"));
@@ -59,7 +65,7 @@ function updateStatusMessages() {
     let energybr = document.createElement('div');
     if (energyValue < 65 && energyValue>= 35) {
         energybr.innerText = "Tired";
-        energybr.appendChild(icon30);}
+        energybr.appendChild(icon25);}
         if (energyValue < 35) {
       energybr.innerText = "Exhausted";
       energybr.appendChild(icon100);}

@@ -22,6 +22,11 @@ $(document).ready(function() {
     updateMoodIcon();  // beginning 
 });
 
+
+function increaseMoodMax(value) {
+    moodMax += value;
+}
+
 function moodDefault(){
     $(".progress-bar").eq(0).attr("aria-valuenow", 100);
     updateMoodIcon();

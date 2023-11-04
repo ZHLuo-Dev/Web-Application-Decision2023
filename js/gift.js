@@ -10,7 +10,7 @@ function giftModel() {
 function yes1() {
     block();
     let descriptionText;
-    descriptionText= "With the recent surge in COVID-19 cases, you're surprised to see that the flight prices have jumped to <span class='bonus-flash'>700</span> gold coins. Are you sure you still want to buy a flight ticket?";
+    descriptionText= "With the recent surge in COVID-19 cases, you're surprised to see that the flight prices have jumped to <span class='bonus-flash'>650</span> gold coins. Are you sure you still want to buy a flight ticket?";
     updateTooltips();
     typeWriterEffect('storyText', descriptionText, showOptions,'phonecall2');    
 }
@@ -19,7 +19,7 @@ function yes2() {
     somevalue=100;
     listLeft();
     block();
-    changeCoins(-700);
+    changeCoins(-650);
     energyDefault();
     moodDefault();
     updateStatusMessages();
