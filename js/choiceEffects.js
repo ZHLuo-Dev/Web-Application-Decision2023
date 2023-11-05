@@ -64,6 +64,7 @@ function changeCoins(delta) {
     $("#coinCount").text(currentCoins);
 }
 
+
 function applyChoiceEffect(choice, currentDay) {
     updateMoodIcon();
     updateEnergyIcon();
@@ -108,18 +109,11 @@ function applyChoiceEffect(choice, currentDay) {
                     increaseEnergyMax(10);
                     break;
                 case 4: // Lazy Day: Just lay in bed.
-
-                    changeMood(6);
-                    changeEnergy(42);
-                    changeEfficiency(-1); 
+                    sleep();
                     updateTooltips();
                     break;
                 case 5: // Enhance your Expertise.
-
-                    changeEnergy(-9);
-                    changeEfficiency(2);
-                    changeMood(-3);
-                    increaseMoodMax(5);
+                    wu();
                     updateTooltips();
                     break;
             }}
@@ -140,17 +134,11 @@ function applyChoiceEffect(choice, currentDay) {
                     break;
                 case 3: // Lazy Day: Just lay in bed.
 
-                    changeMood(6);
-                    changeEnergy(42);
-                    changeEfficiency(-1);
+                    sleep();
                     updateTooltips();
                     break;
                 case 4: // Enhance your Expertise.
-
-                    changeEnergy(-9);
-                    changeMood(-3);
-                    changeEfficiency(2);
-                    increaseMoodMax(5);
+                    wu();
                     updateTooltips();
                     break;
             }}

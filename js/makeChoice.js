@@ -1,4 +1,6 @@
 countSkip=0;
+let wCount=0;
+let PPD =0;
 function skipWork(delta){
     countSkip +=delta;
 }

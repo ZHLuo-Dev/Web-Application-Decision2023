@@ -30,12 +30,12 @@ function updateStatusMessages() {
     let e = energyMax-100;
     let icona = document.createElement('i');
     icona.className = 'fa-solid fa-question-circle';
-    icona.setAttribute('title', 'Energy Cap Increased by '+ e +' %.');
+    icona.setAttribute('title', 'Energy_Max Increased by '+ e +' %.');
 
     let m = moodMax-100;
     let iconb = document.createElement('i');
-    icona.className = 'fa-solid fa-question-circle';
-    icona.setAttribute('title', 'Mood Cap Increased by '+ e +' %.');
+    iconb.className = 'fa-solid fa-question-circle';
+    iconb.setAttribute('title', 'Mood_Max Increased by '+ m +' %.');
 
 
 
@@ -57,6 +57,15 @@ function updateStatusMessages() {
     if (energyMax>100){
         ex.innerText  ="Vitalized";
         ex.appendChild(icona);
+    statusContainer.appendChild(document.createElement('br')); 
+    statusContainer.appendChild(ex);
+    }
+    iconb
+
+    let ey = document.createElement('div');
+    if (moodMax>100){
+        ey.innerText  ="optimistic";
+        ey.appendChild(iconb);
     statusContainer.appendChild(document.createElement('br')); 
     statusContainer.appendChild(ex);
     }
