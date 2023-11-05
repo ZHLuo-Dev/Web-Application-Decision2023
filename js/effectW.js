@@ -58,12 +58,12 @@ function wu(){
 }
 function sleep(){
     if (PPD===0){
-        changeMood(5);
+        changeMood(6);
         changeEnergy(45);
         changeEfficiency(-1); 
     }
     else if (PPD===1){
-        changeMood(5);
+        changeMood(6);
         changeEnergy(45);
     }
 }

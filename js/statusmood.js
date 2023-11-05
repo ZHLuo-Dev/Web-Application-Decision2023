@@ -13,19 +13,19 @@ function updateStatusMessages() {
 
     let icon10 = document.createElement('i');
     icon10.className = 'fa-solid fa-question-circle';
-    icon10.setAttribute('title', 'Real Productivity Debuff: -10%');
+    icon10.setAttribute('title', 'Real Productivity Debuff: -8%');
 
     let icon20 = document.createElement('i');
     icon20.className = 'fa-solid fa-question-circle';
-    icon20.setAttribute('title', 'Real Productivity Debuff: -20%');
+    icon20.setAttribute('title', 'Real Productivity Debuff: -15%');
 
     let icon25 = document.createElement('i');
     icon25.className = 'fa-solid fa-question-circle';
-    icon25.setAttribute('title', 'Real Productivity Debuff: -25%');
+    icon25.setAttribute('title', 'Real Productivity Debuff: -20%');
 
     let icon100 = document.createElement('i');
     icon100.className = 'fa-solid fa-question-circle';
-    icon100.setAttribute('title', 'Real Productivity Debuff: -90%');
+    icon100.setAttribute('title', 'Real Productivity Debuff: -80%');
 
     let e = energyMax-100;
     let icona = document.createElement('i');
