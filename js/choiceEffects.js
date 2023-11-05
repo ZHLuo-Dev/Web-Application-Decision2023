@@ -1,5 +1,5 @@
 
-let completedTasks = 0; // 已完成的任务数量
+let completedTasks = 0; 
 
 
 function xPro() {
@@ -112,7 +112,8 @@ function applyChoiceEffect(choice, currentDay) {
                     sleep();
                     updateTooltips();
                     break;
-                case 5: // Enhance your Expertise.
+                case 5: // Learning: Boost my work Skills.
+                    wCount +=1;
                     wu();
                     updateTooltips();
                     break;
@@ -133,11 +134,11 @@ function applyChoiceEffect(choice, currentDay) {
                     increaseEnergyMax(10);
                     break;
                 case 3: // Lazy Day: Just lay in bed.
-
                     sleep();
                     updateTooltips();
                     break;
-                case 4: // Enhance your Expertise.
+                case 4: // Learning: Boost my work Skills.
+                    wCount +=1;
                     wu();
                     updateTooltips();
                     break;
