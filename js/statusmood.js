@@ -84,44 +84,46 @@ function updateStatusMessages() {
   
     let iconw1 = document.createElement('i');
     iconw1.className = 'fa-solid fa-question-circle';
-    iconw1.setAttribute('title', 'Additional Buff Reward from Enlightenment I: Learning will no longer consume your Mood value.');
+    iconw1.setAttribute('title', 'Additional Buff Rewarded from Enlightened I: Learning will no longer consume your Mood value.');
     let iconw2 = document.createElement('i');
     iconw2.className = 'fa-solid fa-question-circle';
-    iconw2.setAttribute('title', 'Additional Buff Reward from Enlightenment II: Learning will boost Mood by 6 and rais Mood_Max by 2%.');
+    iconw2.setAttribute('title', 'Additional Buff Rewarded from Enlightened II: Learning will boost Mood by 6 and rais Mood_Max by 2%.');
 
     let iconw3 = document.createElement('i');
     iconw3.className = 'fa-solid fa-question-circle';
-    iconw3.setAttribute('title', 'Additional Buff Reward from Enlightenment III: Learning will boost Mood by 6, raise Mood_Max by 2%, and award you one more Productivity point.');
+    iconw3.setAttribute('title', 'Additional Buff Rewarded from Enlightened III: Learning will boost Mood by 6, raise Mood_Max by 2%, and award you one more Productivity point.');
 
     let iconw4 = document.createElement('i');
     iconw4.className = 'fa-solid fa-question-circle';
-    iconw4.setAttribute('title', 'Additional Buff Reward from Enlightenment IV: Learning will boost Mood by 6, raise Mood_Max by 2%, and award you one more Productivity point. You will not lose Productivity point on "Lazy Day".');
+    iconw4.setAttribute('title', 'Additional Buff Rewarded from Enlightened IV: Learning will boost Mood by 6, raise Mood_Max by 2%, and award you one more Productivity point. You will not lose Productivity point on "Lazy Day".');
 
     let iconw5 = document.createElement('i');
     iconw5.className = 'fa-solid fa-question-circle';
-    iconw5.setAttribute('title', 'Additional Buff Reward from Enlightenment V: Learning will boost Mood by 6, raise Mood_Max by 2%, and award you 3 more Productivity points but it will cost 12 more Energy. You will not lose Productivity on "Lazy Day".');
+    iconw5.setAttribute('title', 'Additional Buff Rewarded from Enlightened V: Learning will boost Mood by 6, raise Mood_Max by 2%, and award you 3 more Productivity points but it will cost 12 more Energy. You will not lose Productivity on "Lazy Day".');
 
+ 
 
     level_wu = level();
     let wubr = document.createElement('div');
+ 
     if (level_wu===1){
-        wubr.innerText  = "悟 I";
-        wubr.appendChild(iconw1);
+        wubr.innerText  = "Enlightened I";
+        wubr.appendChild(iconw2);
     }
     else if (level_wu===2){
-        wubr.innerText  = "悟 II";
+        wubr.innerText  = "Enlightened II";
         wubr.appendChild(iconw2);
     }
     else if (level_wu===3){
-        wubr.innerText  = "悟 III";
+        wubr.innerText  = "Enlightened III";
         wubr.appendChild(iconw3);
     }
     else if (level_wu===4){
-        wubr.innerText  = "悟 IV";
+        wubr.innerText  = "Enlightened IV";
         wubr.appendChild(iconw4);
     }
     else if (level_wu===5){
-        wubr.innerText  = "悟 V";
+        wubr.innerText  = "Enlightened V";
         wubr.appendChild(iconw5);
     }
     statusContainer.appendChild(document.createElement('br')); 
