@@ -108,7 +108,7 @@ function updateStatusMessages() {
  
     if (level_wu===1){
         wubr.innerText  = "Enlightened I";
-        wubr.appendChild(iconw2);
+        wubr.appendChild(iconw1);
     }
     else if (level_wu===2){
         wubr.innerText  = "Enlightened II";
