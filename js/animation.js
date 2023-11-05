@@ -11,14 +11,14 @@ function typeWriterEffect(elementId, text,callback,callbackArg) {
     element.innerHTML = '';
 
     let charIndex = 0;
-    let fullText = ''; // 用于累积最终的HTML内容
+    let fullText = ''; 
 
     function typeChar() {
         if (charIndex < text.length) {
             let currentChar = text[charIndex];
             fullText += currentChar;
             
-            // 特殊字符的替换
+            
             fullText = fullText.replace('😼', "<span style='font-size:22px;'>😼</span>")
                                .replace('2023', "<span class='yellow-flash'>2023</span>")
                               
@@ -30,14 +30,14 @@ function typeWriterEffect(elementId, text,callback,callbackArg) {
             
        
             else {
-                // 所有文本打印完成后，调用回调函数
+                
                 if (callback) {
-                    callback(callbackArg); // 这里回调函数是 showOptions
+                    callback(callbackArg); 
                 }
             }
     }
 
-    // 开始打字
+   
     typeChar();
    
 }
@@ -48,7 +48,7 @@ function typeWriterEffect2(elementId, text,callback,callbackArg) {
     element.innerHTML = '';
 
     let charIndex = 0;
-    let fullText = ''; // 用于累积最终的HTML内容
+    let fullText = ''; 
 
     function typeChar() {
         if (charIndex < text.length) {
@@ -76,7 +76,7 @@ function typeWriterEffect3(elementId, text,callback,callbackArg) {
     element.innerHTML = '';
 
     let charIndex = 0;
-    let fullText = ''; // 用于累积最终的HTML内容
+    let fullText = ''; 
 
     function typeChar() {
         if (charIndex < text.length) {

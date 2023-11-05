@@ -20,8 +20,8 @@ function showMonthEndModal() {
         let descriptionText;
         descriptionText = "Wow, a month already? You nailed it by completing your tasks just right. Nice going!";
         typeWriterEffect('storyText', descriptionText, showOptions,'monthEndThanks');   
-        changeMood(+4);
-        changeEnergy(+2);
+        changeMood(+2);
+        changeEnergy(+1);
 
     } else if (predictedBonus > 0) {
         let descriptionText;
@@ -29,8 +29,8 @@ function showMonthEndModal() {
         descriptionText = "A month in the blink of an eye! Your hard work paid off, here's your well-earned bonus of " + BonusHere + " !";
         typeWriterEffect3('storyText', descriptionText, showOptions,'monthEndAwesome'); 
         adjustCoins(predictedBonus);  // Add the bonus
-        changeMood(+8);
-        changeEnergy(+4);
+        changeMood(+4);
+        changeEnergy(+2);
         updateTooltips();
     }
 }

@@ -215,7 +215,7 @@ body {
     left: 3%;
     color: rgb(255, 255, 255); 
     background-color: #323f02;  /* 背景颜色 */
-    padding: 10px;
+    padding: 15px 18px 5px 18px;
     border: 3px solid black;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     font-size: 14px;
@@ -238,7 +238,7 @@ body {
 }
 
 .yellow-flash {
-    color: red;
+    color: #9618af;
     
 }
 .colorFine {

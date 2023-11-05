@@ -6,7 +6,7 @@ $(document).ready(function() {
 function updateMoodIcon() {
     const moodValue = parseFloat($(".progress-bar").eq(0).attr("aria-valuenow"));
 
-    $(".icon-style.fa-regular").hide(); // 隐藏所有的mood图标
+    $(".icon-style.fa-regular").hide(); 
 
     if (moodValue >= 70) {
         $('.fa-face-smile').show();
@@ -23,7 +23,7 @@ function updateMoodIcon() {
 function updateEnergyIcon() {
     const energyValue = parseFloat($(".progress-bar").eq(1).attr("aria-valuenow"));
 
-    $(".icon-style.fa-solid").hide(); // 隐藏所有的energy图标
+    $(".icon-style.fa-solid").hide(); 
 
     if (energyValue >= 65) {
         $('.fa-battery-full').show();

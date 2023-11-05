@@ -49,18 +49,18 @@ if (0 <= currentDay<=6 || somevalue === 0 ){
 if (somevalue === 20 ){
     displayLeftElement.textContent = 'A Call from Home';
 }
-if (somevalue === 100 ){
+if (currentDay === 30 && somevalue === 100 ){
     displayLeftElement.textContent = 'Hidden Finale';
     displayLeftElement.appendChild(iconhomeend);
 }
 
-if (currentDay === 30 ||somevalue === 31){
+if ((currentDay === 30 && somevalue === 30)||somevalue === 31){
     displayLeftElement.textContent = 'Monthly Treats';
 }
 
 if (currentDay === 32 ){
     displayLeftElement.textContent = 'Regular Finale';
-    displayLeftElement.appendChild(iconhomeend);
+    displayLeftElement.appendChild(iconregularend);
 }
 
 }

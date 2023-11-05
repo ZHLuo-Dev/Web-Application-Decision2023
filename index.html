@@ -31,7 +31,7 @@
         <p id="storyText"></p>
          <div id="options">
             <div id="initOption" style="display: none;">
-                <button onclick="makeChoice('init')">Oh.</button>
+                <button onclick="makeChoice('init')">Accepted.</button>
             </div>
             <div id="weekdayOptions">
                 <button onclick="makeChoice(1)">Go to work.</button>
@@ -85,13 +85,13 @@
                 <div class="attribute">
                     <i class="fa-solid fa-coins fa-beat fa-xl" style="color: #cebd08;"></i>   
                      <span id="coinCount">100</span>
-                     <i class="fa-solid fa-question-circle" id="coinTooltip"></i> 
+                     <i class="fa-solid fa-question-circle" id="coinTooltip" style="font-size: 18px;"></i> 
                 </div>
                 <!-- Efficiency -->
                 <div class="attribute">
                     <i class="fa-solid fa-gear fa-spin fa-spin-reverse fa-xl" style="color: #030b35;"></i> 
                      <span id="taskCount">15</span>   
-                     <i class="fa-solid fa-question-circle" id="taskTooltip"></i>
+                     <i class="fa-solid fa-question-circle" id="taskTooltip" style="font-size: 18px;"></i>
                 </div>
                     <div class="container-fluid p-0">
                         <!-- Mood -->
@@ -128,7 +128,7 @@
     </div>
    
     <div id="doctor">
-        <p id="skipText"><span style='font-size:22px;'>🤧😢</span>You're experiencing severe mental distress and need professional help.<span style='font-size:22px;'>😞😭</span><br><br>A visit to the therapist will cost <span class='yellow-flash'>$180</span>.</p>
+        <p id="skipText"><span style='font-size:22px;'>🤧😢</span>You're experiencing severe mental distress and need professional help.<span style='font-size:22px;'>😞😭</span><br><br>A visit to the therapist will cost <span class='yellow-flash'>200 gold coins</span>.</p>
         <div id="skipoptions">
         <button onclick="seeDoc()">Accept.</button>
         </div>
@@ -152,7 +152,7 @@
 
     <script>
     window.onload = function() {
-        var storyText = "A charming cat 😼 has captured your affection, and you've set a goal: earn 2023 gold coins within two months to buy it.";
+        var storyText = "A charming cat 😼 has captured your affection, and you've set a goal: earn 2023 gold coins working hard over the next two months to buy it.";
         typeWriterEffect('storyText', storyText, showOptions,'initOption'); 
         updateTooltips();
         updateStatusMessages()

@@ -6,7 +6,7 @@ function skipWork(delta){
 }
 
 function seeDoc(){
-    changeCoins(-180); 
+    changeCoins(-200); 
     moodDoc();
     var docmodel = document.getElementById("doctor");
     var docmodel2 = document.getElementById("doctor2");
@@ -23,12 +23,15 @@ function seeDoc2(){
 
 let somevalue = 0;
 function makeChoice(option) {
+    let randomV = Math.random();
+    
     if(countSkip==3){
         var skipmodal = document.getElementById("skipover");
         skipmodal.style.display = "block";
       }
-    if(somevalue === 20){
+    if(somevalue === 20 && randomV>0.5){
         applyChoiceEffect(option, currentDay);
+        listLeft();
         giftModel();
         document.getElementById("monthEndChoices").style.display = "none";
         document.getElementById("weekdayOptions").style.display = "none";
@@ -38,10 +41,12 @@ function makeChoice(option) {
         document.getElementById("normalEnd").style.display = "none";
         document.getElementById("monthEndChoices").style.display = "none";
         currentDay = 30;
-        somevalue = 22;
         return;}
-
+    if(somevalue === 20 && randomV<=0.5){
+        currentDay = 30;
+    }
     if (currentDay === 30) {
+        somevalue= 30;
         showMonthEndModal();
         // Hide all other options
         document.getElementById("initOption").style.display = "none";

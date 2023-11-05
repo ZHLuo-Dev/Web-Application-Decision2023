@@ -67,7 +67,7 @@ function updateStatusMessages() {
         ey.innerText  ="Optimistic";
         ey.appendChild(iconb);
     statusContainer.appendChild(document.createElement('br')); 
-    statusContainer.appendChild(ex);
+    statusContainer.appendChild(ey);
     }
 
     let energyValue = parseFloat($(".progress-bar").eq(1).attr("aria-valuenow"));
