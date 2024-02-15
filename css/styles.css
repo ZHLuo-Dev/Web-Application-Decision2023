@@ -34,8 +34,8 @@ body {
     #content {
         position: absolute;
         top: 5.5%;
-         width: 15.6%; 
-         left: 15.2%;
+        width: 15.6%; 
+        left: 15.2%;
         padding: 10px;
         /* 适当调整内边距和其他样式 */
     }
@@ -67,6 +67,15 @@ body {
         left: 75%;
         bottom: 80%;
 
+    }
+    #storyText {
+        font-size:8px;
+    
+        overflow: hidden; 
+        text-align: left;
+        line-height: 1.4; 
+        word-spacing: 0;
+    
     }
 }
 
