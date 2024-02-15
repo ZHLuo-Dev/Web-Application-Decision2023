@@ -4,8 +4,7 @@
 
 function updateStatusMessages() {
     let statusContainer = document.getElementById("statusMessages");
-    statusContainer.innerHTML = "<span style='font-size:17.5px;'>Status:</span>";
-
+    statusContainer.innerHTML = "<span class='status-title'>Status:</span>";
 
 
     statusContainer.appendChild(document.createElement('br')); 

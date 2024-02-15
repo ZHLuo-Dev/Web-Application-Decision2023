@@ -33,7 +33,7 @@ body {
 .additional-box1 {
     background-color:#AEDFF7;
     border: 3px solid black; 
-    height: 50px; 
+    height:50px;
     width: 95%;
     max-width: 700px; 
     margin: 20px auto; 
@@ -43,11 +43,24 @@ body {
     margin:20px auto;
     padding: 0 18px;
 }
+.icon-span {
+    font-size: 22px;
+}
+.status-title {
+    font-size: 17.5px;
+}
 
 @media (max-width: 600px) {
     #content {
-        padding:5px 13px 2px 13px;
+       padding:5px 13px 2px 13px;
        margin: -16px auto; 
+    }
+    #statusMessages{
+        font-size:9px!important;
+    }
+
+    .status-title {
+        font-size: 14px; 
     }
     #storyText {
         font-size:10px !important;
@@ -56,6 +69,10 @@ body {
         line-height: 1.4; 
         word-spacing: 0;
     }
+    .icon-span {
+        font-size: 9px!important;
+    }
+    
     #options button {
         font-family: 'Press Start 2P', cursive;
         background-color: #88d2f7;
@@ -63,11 +80,10 @@ body {
         margin-bottom: 8px; 
         display: block;
         cursor: pointer;
-        transition: background-color 0.3s;
-        text-align: center;
+        transition: background-color 0.1s;
         height: 3em !important;
-        padding: 2px 0.5px 2px 5px;
-        font-size:10px !important;
+        padding: 0px 6px 5px 6px;
+        font-size:8px !important;
     }
 
     #options {
@@ -117,6 +133,11 @@ body {
     }
     .monthly-summary-title {
         font-size: 13.5px !important; 
+    }
+    .additional-box1 {
+        height: 2em !important;
+        padding: 0 18px;
+        margin:20px auto;
     }
 }
 .monthly-summary-title {
