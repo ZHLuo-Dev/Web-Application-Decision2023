@@ -78,17 +78,9 @@ body {
     }
     .game-time {
         font-size: 10px!important;
-        padding: 0; 
-        margin: 0;
-        min-width: 0;
-        flex-grow: 1; 
     }
     .game-time-t{
-        flex-grow: 1;
-        padding: 0; 
-        margin: 0;
-        min-width: 0;
-        font-size: 11px; 
+        font-size: 11px!important; 
     }
     .attribute {
         font-family: 'Press Start 2P', cursive;
@@ -122,13 +114,12 @@ body {
         padding: 10px 13px 3px 13px;
         font-size: 10px !important; 
 }
-.fa-question-circle {
-    margin-left: 10px !important;  
-}
-.monthly-summary-title {
-    font-size: 13.5px !important; 
-}
-
+    .fa-question-circle {
+        margin-left: 10px !important;  
+    }
+    .monthly-summary-title {
+        font-size: 13.5px !important; 
+    }
 }
 .monthly-summary-title {
     font-size: 17px; 
