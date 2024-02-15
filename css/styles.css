@@ -47,7 +47,7 @@ body {
 @media (max-width: 600px) {
     #content {
         padding:5px 13px 2px 13px;
-       margin: -10px auto; 
+       margin: -16px auto; 
     }
     #storyText {
         font-size:10px !important;
@@ -57,10 +57,24 @@ body {
         word-spacing: 0;
     }
     #options button {
-        font-size:11px !important;
+        font-family: 'Press Start 2P', cursive;
+        background-color: #88d2f7;
+        border: 3px solid #00090e;
+        margin-bottom: 8px; 
+        display: block;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-align: center;
+        height: 4em !important;
+        padding: 3px 1px 3px 1px;
+        font-size:10.5px !important;
     }
+
     #options {
         margin-top:40px !important; 
+    }
+    #options button:hover {
+        background-color: #9618af; 
     }
     .game-time {
         font-size: 10px!important;
@@ -78,35 +92,46 @@ body {
     }
     .attribute {
         font-family: 'Press Start 2P', cursive;
-        font-size: 8px !important;
+        font-size: 10px !important;
         margin-bottom: 10px;
         white-space: nowrap;
         margin-bottom: 30px;
     }
     .right-panel {
-        font-size: 8px !important;
+        font-size: 10px !important;
         position: absolute !important;
         bottom: 18.5%!important;
         left:40%!important;
         right:2%;
+    
     }
     .attributes-container {
         position: absolute !important;
-        bottom: 10.5%!important;
-        left:42%!important;
+        bottom: 18.5%!important;
+        left:40%!important;
     }
     .additional-box2 {
         height: 70%!important; 
     }
     .left-panel {
         position: absolute;
-        bottom: 10.5%!important;
+        bottom: 31.5%!important;
         right:45%!important;
         left:2%!important;
-        top: 51.5%!important;
+        top: 44.8%!important;
         padding: 10px 13px 3px 13px;
-        font-size: 8px !important; 
+        font-size: 10px !important; 
 }
+.fa-question-circle {
+    margin-left: 10px !important;  
+}
+.monthly-summary-title {
+    font-size: 13.5px !important; 
+}
+
+}
+.monthly-summary-title {
+    font-size: 17px; 
 }
 
 
@@ -175,7 +200,7 @@ body {
 }
 
 #options {
-    margin-top: 65px; 
+    margin-top: 6s5px; 
 }
 
 #options button {
@@ -236,7 +261,6 @@ body {
 .attribute {
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
-    margin-bottom: 10px;
     white-space: nowrap;
     margin-bottom: 30px;
 
