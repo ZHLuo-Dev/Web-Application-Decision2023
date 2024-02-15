@@ -31,7 +31,7 @@ body {
    
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     #content {
         width: 90%;
         padding: 10px;
