@@ -24,7 +24,6 @@ body {
     background-color: #AEDFF7; 
     border: 3px solid black; 
     padding:14px 18px 5px 18px;
-
     margin: 0 auto; 
     width: 720px;
     min-height: 2px; 
@@ -46,7 +45,12 @@ body {
     .additional-box2{
         width: 90%;
         padding: 2px;
-        font-size:1px !important;
+        /* 适当调整内边距和其他样式 */
+    }
+    .left-panel{
+        width: 90%;
+        padding: 2px;
+        font-size:3px !important;
     
         /* 适当调整内边距和其他样式 */
     }
@@ -79,6 +83,14 @@ body {
     padding: 15px 16px 15px 16px;
     display: flex;
     font-size:18px;
+}
+.right-panel {
+    position: absolute;
+    top: 10.5%;
+    right: 13%;
+    left: 75%;
+    bottom: 80%;
+    animation: slideInFromRight 1.5s ease-in-out;
 }
 
 @keyframes flipIn {
@@ -171,14 +183,7 @@ body {
     min-width: 0;
     font-size: 16px; 
 }
-.right-panel {
-    position: absolute;
-    top: 10.5%;
-    right: 13%;
-    left: 75%;
-    bottom: 80%;
-    animation: slideInFromRight 1.5s ease-in-out;
-}
+
 
 .attributes-container {
     display: flex;
