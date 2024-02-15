@@ -45,7 +45,7 @@ body {
     .additional-box1  {
         position: absolute;
         top:0.5%;
-        width: 37.6%; 
+        width: 10.6%; 
         left: 31.2%;
         right: 31.2%;
     margin: 0 auto;
@@ -55,7 +55,7 @@ body {
         position: absolute;
         margin: 0 auto;
         top: 35.5%;
-        width: 37.6%; 
+        width: 10.6%; 
         left: 31.2%;
         right: 31.2%;
     }
@@ -83,6 +83,15 @@ body {
         text-align: left;
         line-height: 1.4; 
         word-spacing: 0;
+    
+    }
+    .game-time {
+        text-align: right;
+        font-size: 8px; 
+        padding: 0; 
+        margin: 0;
+        min-width: 0;
+        flex-grow: 1;
     
     }
 }
