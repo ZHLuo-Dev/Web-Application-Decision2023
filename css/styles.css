@@ -63,6 +63,23 @@ body {
             #options {
                 margin-top:40px !important; 
             }
+            .game-time {
+         
+                font-size: 10px!important;
+                padding: 0; 
+                margin: 0;
+                min-width: 0;
+                flex-grow: 1;
+            
+            }
+            .game-time-t{
+         
+                flex-grow: 1;
+                padding: 0; 
+                margin: 0;
+                min-width: 0;
+                font-size: 11px!important;
+            }
             
 }
 
