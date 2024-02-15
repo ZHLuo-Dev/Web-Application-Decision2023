@@ -37,18 +37,23 @@ body {
         width: 35.6%; 
         left: 15.2%;
         padding: 10px;
+        margin: 0 auto;
         /* 适当调整内边距和其他样式 */
     }
     .additional-box1  {
-        width: 60%;
-        padding: 10px;
-        /* 适当调整内边距和其他样式 */
+        top:0.5%;
+        width: 37.6%; 
+        left: 31.2%;
+        right: 31.2%;
+    margin: 0 auto;
     }
 
     .additional-box2{
-        width: 60%;
-        padding: 2px;
-        /* 适当调整内边距和其他样式 */
+        margin: 0 auto;
+        top: 35.5%;
+        width: 37.6%; 
+        left: 31.2%;
+        right: 31.2%;
     }
     .left-panel{
         position: absolute;
