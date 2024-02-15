@@ -92,11 +92,12 @@ body {
     .right-panel {
         font-size: 10px !important;
         position: absolute !important;
-       
+        bottom: 8.5%!important;
+        left:40%!important;
     }
     .attributes-container {
         position: absolute !important;
-        bottom: 18.5%!important;
+        bottom: 8.5%!important;
         left:40%!important;
     }
     .additional-box2 {
@@ -104,10 +105,10 @@ body {
     }
     .left-panel {
         position: absolute;
-        bottom: 31.5%!important;
+        bottom: 21.5%!important;
         right:45%!important;
         left:2%!important;
-        top: 44.8%!important;
+        top: 54.8%!important;
         padding: 10px 13px 3px 13px;
         font-size: 10px !important; 
 }
