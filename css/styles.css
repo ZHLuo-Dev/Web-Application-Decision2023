@@ -59,15 +59,15 @@ body {
     #options button {
         font-family: 'Press Start 2P', cursive;
         background-color: #88d2f7;
-        border: 3px solid #00090e;
+        border: 2px solid #00090e!important;
         margin-bottom: 8px; 
         display: block;
         cursor: pointer;
         transition: background-color 0.3s;
         text-align: center;
-        height: 4em !important;
-        padding: 3px 1px 3px 1px;
-        font-size:10.5px !important;
+        height: 3em !important;
+        padding: 2px 0.5px 2px 5px;
+        font-size:10px !important;
     }
 
     #options {
@@ -190,7 +190,7 @@ body {
 }
 
 #options {
-    margin-top: 6s5px; 
+    margin-top: 65px; 
 }
 
 #options button {
