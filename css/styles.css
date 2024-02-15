@@ -43,12 +43,9 @@ body {
         /* 适当调整内边距和其他样式 */
     }
     .additional-box1  {
-        position: absolute;
-        top:0.5%;
-        width: 10.6%; 
-        left: 31.2%;
-        right: 31.2%;
-    margin: 0 auto;
+        display: flex;
+        width: 20%;
+    margin: 30px;
     }
 
     .additional-box2{
