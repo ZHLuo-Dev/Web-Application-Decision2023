@@ -48,11 +48,22 @@ body {
         /* 适当调整内边距和其他样式 */
     }
     .left-panel{
-        width: 90%;
+        position: absolute;
+        top: 10.5%;
+        right: 75%;
+        left: 3%;
         padding: 2px;
         font-size:3px !important;
     
         /* 适当调整内边距和其他样式 */
+    }
+    .right-panel{
+        position: absolute;
+        top: 10.5%;
+        right: 13%;
+        left: 75%;
+        bottom: 80%;
+
     }
 }
 
