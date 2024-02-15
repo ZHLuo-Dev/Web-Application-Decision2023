@@ -32,7 +32,10 @@ body {
 
 @media (max-width: 600px) {
     #content {
-        width: 60%;
+        position: absolute;
+        top: 5.5%;
+         width: 15.6%; 
+         left: 15.2%;
         padding: 10px;
         /* 适当调整内边距和其他样式 */
     }
