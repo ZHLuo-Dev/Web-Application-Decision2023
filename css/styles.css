@@ -46,6 +46,8 @@ body {
     .additional-box2{
         width: 90%;
         padding: 10px;
+        font-size:8px;
+    
         /* 适当调整内边距和其他样式 */
     }
 }
