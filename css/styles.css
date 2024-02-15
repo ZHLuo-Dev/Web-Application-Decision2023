@@ -37,6 +37,46 @@ body {
         padding: 10px;
         /* 适当调整内边距和其他样式 */
     }
+    .additional-box1  {
+        width: 90%;
+        padding: 10px;
+        /* 适当调整内边距和其他样式 */
+    }
+
+    .additional-box2{
+        width: 90%;
+        padding: 10px;
+        /* 适当调整内边距和其他样式 */
+    }
+}
+
+
+.additional-box1 {
+   
+  
+    background-color:#AEDFF7;
+    border: 3px solid black; 
+    height: 50px; 
+    width: 720px; 
+    margin: 20px auto; 
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center; 
+    margin:20px auto;
+    padding: 0 18px;
+}
+
+
+.additional-box2 {
+   
+    background-color:#AEDFF7;
+    border: 3px solid black; 
+    height: 180px; 
+    width: 720px; 
+    margin : 20px auto;
+    padding: 15px 16px 15px 16px;
+    display: flex;
+    font-size:18px;
 }
 
 @keyframes flipIn {
@@ -104,34 +144,7 @@ body {
 #options button:hover {
     background-color: #9618af; 
 }
-.additional-box1 {
-   
-  
-    background-color:#AEDFF7;
-    border: 3px solid black; 
-    height: 50px; 
-    width: 720px; 
-    margin: 20px auto; 
-    display: flex;
-    justify-content: space-between!important;
-    align-items: center; 
-    margin:20px auto;
-    padding: 0 18px;
-}
 
-.additional-box2 {
-   
-    background-color:#AEDFF7;
-    border: 3px solid black; 
-    height: 180px; 
-    width: 720px; 
-    margin : 20px auto;
-    padding: 15px 16px 15px 16px;
-    display: flex;
-    font-size:18px;
-
-
-}
 #statusMessages{
    font-size: 15px;
    text-align: left !important;
