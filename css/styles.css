@@ -32,15 +32,18 @@ body {
 
 @media (max-width: 500px) {
     #content {
+        font-size:6px;
         position: absolute;
         top: 5.5%;
         width: 35.6%; 
         left: 15.2%;
         padding: 10px;
         margin: 0 auto;
+
         /* 适当调整内边距和其他样式 */
     }
     .additional-box1  {
+        position: absolute;
         top:0.5%;
         width: 37.6%; 
         left: 31.2%;
@@ -49,6 +52,7 @@ body {
     }
 
     .additional-box2{
+        position: absolute;
         margin: 0 auto;
         top: 35.5%;
         width: 37.6%; 
