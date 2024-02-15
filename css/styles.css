@@ -93,21 +93,19 @@ body {
         font-size: 10px !important;
         position: absolute !important;
         bottom: 8.5%!important;
-        left:40%!important;
+        top: 55% !important;
+        left:56%!important;
+        right: 1% !important;
     }
-    .attributes-container {
-        position: absolute !important;
-        bottom: 8.5%!important;
-        left:40%!important;
-    }
+   
     .additional-box2 {
         height: 70%!important; 
     }
     .left-panel {
         position: absolute;
         bottom: 21.5%!important;
-        right:45%!important;
-        left:2%!important;
+        right:46%!important;
+        left:1%!important;
         top: 54.8%!important;
         padding: 10px 13px 3px 13px;
         font-size: 10px !important; 
@@ -142,6 +140,7 @@ body {
     right: 13%;
     left: 75%;
     bottom: 80%;
+    height:215px;
     animation: slideInFromRight 1.5s ease-in-out;
 }
 
@@ -295,6 +294,7 @@ body {
 .left-panel {
     position: absolute;
     top: 10.5%;
+    height:215px;
     right: 75%;
     left: 3%;
     color: rgb(255, 255, 255); 
