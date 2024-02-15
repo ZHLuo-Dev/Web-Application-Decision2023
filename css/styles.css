@@ -30,11 +30,11 @@ body {
    
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     #content {
         position: absolute;
         top: 5.5%;
-        width: 15.6%; 
+        width: 35.6%; 
         left: 15.2%;
         padding: 10px;
         /* 适当调整内边距和其他样式 */
@@ -70,7 +70,6 @@ body {
     }
     #storyText {
         font-size:8px;
-    
         overflow: hidden; 
         text-align: left;
         line-height: 1.4; 
