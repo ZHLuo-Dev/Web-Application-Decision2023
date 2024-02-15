@@ -32,18 +32,18 @@ body {
 
 @media (max-width: 600px) {
     #content {
-        width: 90%;
+        width: 60%;
         padding: 10px;
         /* 适当调整内边距和其他样式 */
     }
     .additional-box1  {
-        width: 90%;
+        width: 60%;
         padding: 10px;
         /* 适当调整内边距和其他样式 */
     }
 
     .additional-box2{
-        width: 90%;
+        width: 60%;
         padding: 2px;
         /* 适当调整内边距和其他样式 */
     }
