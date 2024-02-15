@@ -24,12 +24,21 @@ body {
     background-color: #AEDFF7; 
     border: 3px solid black; 
     padding:14px 18px 5px 18px;
-    width: 80vw;
-    max-width: 720px; /* 最大宽度仍然是720px */
+
     margin: 0 auto; 
+    width: 720px;
     min-height: 2px; 
    
 }
+
+@media (max-width: 450px) {
+    #content {
+        width: 90%;
+        padding: 10px;
+        /* 适当调整内边距和其他样式 */
+    }
+}
+
 @keyframes flipIn {
     from { transform: rotateX(-90deg); opacity: 0; }
     to { transform: rotateX(0deg); opacity: 1; }
@@ -96,6 +105,8 @@ body {
     background-color: #9618af; 
 }
 .additional-box1 {
+   
+  
     background-color:#AEDFF7;
     border: 3px solid black; 
     height: 50px; 
@@ -104,11 +115,12 @@ body {
     display: flex;
     justify-content: space-between!important;
     align-items: center; 
-    margin: 20px auto;
+    margin:20px auto;
     padding: 0 18px;
 }
 
 .additional-box2 {
+   
     background-color:#AEDFF7;
     border: 3px solid black; 
     height: 180px; 
