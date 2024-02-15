@@ -13,8 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
  
-    margin: 0;
-    padding: 0;
+
     width: 100%;
     min-height: 100%;
 
@@ -25,7 +24,7 @@ body {
     border: 3px solid black; 
     padding:14px 18px 5px 18px;
     margin: 0 auto; 
-    width: 70%;
+    width: 95%;
     max-width: 700px; 
     min-height: 2px; 
    
@@ -35,7 +34,7 @@ body {
     background-color:#AEDFF7;
     border: 3px solid black; 
     height: 50px; 
-    width: 70%;
+    width: 95%;
     max-width: 700px; 
     margin: 20px auto; 
     display: flex;
@@ -48,6 +47,7 @@ body {
 @media (max-width: 600px) {
     #content {
         padding:5px 13px 2px 13px;
+       margin: -10px auto; 
     }
     #storyText {
         font-size:10px !important;
@@ -87,12 +87,13 @@ body {
         font-size: 8px !important;
         position: absolute !important;
         bottom: 18.5%!important;
-        left:26%!important;
+        left:40%!important;
+        right:2%;
     }
     .attributes-container {
         position: absolute !important;
         bottom: 10.5%!important;
-        left:26%!important;
+        left:42%!important;
     }
     .additional-box2 {
         height: 70%!important; 
@@ -100,7 +101,8 @@ body {
     .left-panel {
         position: absolute;
         bottom: 10.5%!important;
-        right: 46%!important;
+        right:45%!important;
+        left:2%!important;
         top: 51.5%!important;
         padding: 10px 13px 3px 13px;
         font-size: 8px !important; 
@@ -113,7 +115,7 @@ body {
     background-color:#AEDFF7;
     border: 3px solid black; 
     height: 180px; 
-    width: 70%;
+    width: 95%;
     max-width: 700px; 
     margin : 20px auto;
     padding: 15px 16px 15px 16px;
