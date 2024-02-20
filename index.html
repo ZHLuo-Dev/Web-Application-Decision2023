@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Google Analytics (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKM5KFSQ2X"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+     
+       // Check if user has accepted cookies
+       const userAcceptedCookies = getCookie('cookieConsent');
+     
+       // If user has not accepted cookies, show the cookie consent popup
+       if (!userAcceptedCookies) {
+           document.getElementById('cookieConsent').style.display = 'block';
+       }
+     
+       // Function to set cookie
+       function setCookie(name, value, days) {
+           var expires = "";
+           if (days) {
+               var date = new Date();
+               date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+               expires = "; expires=" + date.toUTCString();
+           }
+           document.cookie = name + "=" + (value || "") + expires + "; path=/";
+       }
+     
+       // Function to get cookie value
+       function getCookie(name) {
+           var nameEQ = name + "=";
+           var ca = document.cookie.split(';');
+           for (var i = 0; i < ca.length; i++) {
+               var c = ca[i];
+               while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+               if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+           }
+           return null;
+       }
+     
+       // Function to accept cookies
+       function acceptCookies() {
+           setCookie('cookieConsent', 'accepted', 365); // Set cookie for 365 days
+           document.getElementById('cookieConsent').style.display = 'none';
+           // Start Google Analytics tracking
+           gtag('config', 'G-G-XWTKZ3XQTT');
+       }
+
+     function rejectCookies() {
+             setCookie('cookieConsent', 'rejected', 365); // Set cookie for 365 days
+             document.getElementById('cookieConsent').style.display = 'none';
+         }
+
+     </script> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2023</title>
@@ -42,58 +94,7 @@
                 }
             }
             </style>
-        <!-- Google Analytics (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKM5KFSQ2X"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
         
-          // Check if user has accepted cookies
-          const userAcceptedCookies = getCookie('cookieConsent');
-        
-          // If user has not accepted cookies, show the cookie consent popup
-          if (!userAcceptedCookies) {
-              document.getElementById('cookieConsent').style.display = 'block';
-          }
-        
-          // Function to set cookie
-          function setCookie(name, value, days) {
-              var expires = "";
-              if (days) {
-                  var date = new Date();
-                  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                  expires = "; expires=" + date.toUTCString();
-              }
-              document.cookie = name + "=" + (value || "") + expires + "; path=/";
-          }
-        
-          // Function to get cookie value
-          function getCookie(name) {
-              var nameEQ = name + "=";
-              var ca = document.cookie.split(';');
-              for (var i = 0; i < ca.length; i++) {
-                  var c = ca[i];
-                  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                  if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-              }
-              return null;
-          }
-        
-          // Function to accept cookies
-          function acceptCookies() {
-              setCookie('cookieConsent', 'accepted', 365); // Set cookie for 365 days
-              document.getElementById('cookieConsent').style.display = 'none';
-              // Start Google Analytics tracking
-              gtag('config', 'G-G-XWTKZ3XQTT');
-          }
-
-        function rejectCookies() {
-                setCookie('cookieConsent', 'rejected', 365); // Set cookie for 365 days
-                document.getElementById('cookieConsent').style.display = 'none';
-            }
-
-        </script>  
     </head>
 
 <body>                          
