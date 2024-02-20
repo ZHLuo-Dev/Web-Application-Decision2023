@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,91 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-  
-</head>
+      
+        <!-- Cookie Consent Popup -->
+        <div id="cookieConsent" style="display: none; position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #6ec8f5; padding: 20px; border: 2px solid #000; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+            <p style="color: #5f5e5e;font-size: 15px;">This website uses cookies to ensure you get the best experience on our website. By accepting, you agree to our use of cookies.</p>
+            <button onclick="acceptCookies()" style="background-color: #03496e; color: #f7eff6; border: 2px solid #000; padding: 10px 20px; border-radius: 5px;font-size: 16px;">Accept</button>
+            <button onclick="rejectCookies()" style="background-color: #03496e; color: #f7eff6; border: 2px solid #000; padding: 10px 20px; border-radius: 5px;font-size: 16px;">Reject</button>
+        </div>
+        <style>
+            @media (max-width: 600px) {
+                #cookieConsent {
+                    top: 23%!important; 
+                    padding: 8px!important; 
+                }
+            
+                #cookieConsent p {
+                    font-size: 9px!important; 
+                }
+            
+                #cookieConsent button {
+                    padding: 5px 8px!important; 
+                    font-size: 11px!important; 
+                }
+            }
+            </style>
+        <!-- Google Analytics (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKM5KFSQ2X"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          // Check if user has accepted cookies
+          const userAcceptedCookies = getCookie('cookieConsent');
+        
+          // If user has not accepted cookies, show the cookie consent popup
+          if (!userAcceptedCookies) {
+              document.getElementById('cookieConsent').style.display = 'block';
+          }
+        
+          // Function to set cookie
+          function setCookie(name, value, days) {
+              var expires = "";
+              if (days) {
+                  var date = new Date();
+                  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                  expires = "; expires=" + date.toUTCString();
+              }
+              document.cookie = name + "=" + (value || "") + expires + "; path=/";
+          }
+        
+          // Function to get cookie value
+          function getCookie(name) {
+              var nameEQ = name + "=";
+              var ca = document.cookie.split(';');
+              for (var i = 0; i < ca.length; i++) {
+                  var c = ca[i];
+                  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                  if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+              }
+              return null;
+          }
+        
+          // Function to accept cookies
+          function acceptCookies() {
+              setCookie('cookieConsent', 'accepted', 365); // Set cookie for 365 days
+              document.getElementById('cookieConsent').style.display = 'none';
+              // Start Google Analytics tracking
+              gtag('config', 'G-KKM5KFSQ2X');
+          }
+
+        function rejectCookies() {
+                setCookie('cookieConsent', 'rejected', 365); // Set cookie for 365 days
+                document.getElementById('cookieConsent').style.display = 'none';
+            }
+
+        </script>  
+    </head>
 <body>
+                              
+
     <div id="topBox" class="additional-box1">
         <div class="title"></div><div class="game-time-t">The Story Begins</div> <div class="game-time">Week 1 Monday</div>
     </div>
 
     <div id="content">
-     
 
         <p id="storyText"></p>
          <div id="options">
