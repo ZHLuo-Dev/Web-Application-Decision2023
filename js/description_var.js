@@ -11,16 +11,16 @@ const weekendDescriptions = [
     "Today is the <strong>LAST</strong> day of the weekend. What's your move?"
 ];
 function updateDescription() {
-    if (currentDay === 0) {  // 周日
+    if (currentDay === 0) {  
         block();
         let descriptionText;
         descriptionText = weekendDescriptions[1];
         typeWriterEffect('storyText', descriptionText, showOptions,'sunday');
-    } else if (currentDay === 6) {  // 周六
+    } else if (currentDay === 6) {  
         block();
         descriptionText= weekendDescriptions[0];
         typeWriterEffect('storyText', descriptionText, showOptions,'saturday');
-    } else {  // 工作日
+    } else {  
         block();
         descriptionText= weekdayDescriptions[currentDay - 1];
         typeWriterEffect('storyText', descriptionText,  showOptions,'weekday');

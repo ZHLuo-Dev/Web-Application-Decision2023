@@ -15,6 +15,11 @@ function yes1() {
     updateTooltips();
     typeWriterEffect('storyText', descriptionText, showOptions,'phonecall2');    
     somevalue=100;
+    gtag('event', 'home_0', {
+        'event_category': 'home', 
+        'event_label': 'considering',
+        'value': 0 
+    });
 }
 let yesyes = 0;
 
@@ -29,6 +34,11 @@ function yes2() {
     let descriptionText;
     descriptionText= "<span style='font-size:21px;'>👪</span> Embracing your parents, you feel a warmth that money can't buy.<br><span style='font-size:21px;'>😊😊</span>Your parents are overjoyed, their smiles wide and welcoming.<br><br><span style='font-size:21px;'>😸</span> A fortuitous encounter was written in the stars,fate presents you with a surprise — you notices a cat that looks just like the one you've been longing to buy. As you gently scoop it into your arms, you realize some of the best things in life come unexpectedly.";
     typeWriterEffect('storyText', descriptionText, showOptions,'phonecallEnd');    
+    gtag('event', 'home_1', {
+        'event_category': 'home', 
+        'event_label': 'end 2',
+        'value': 1 
+    });
 
 
 }
