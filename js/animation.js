@@ -1,9 +1,9 @@
 
 function triggerAnimation() {
     let messageElement = document.getElementById('storyText');
-    messageElement.classList.remove('text-container span '); // 移除动画类以重置动画
-    void messageElement.offsetWidth; // 触发重排
-    messageElement.classList.add('text-container span '); // 再次添加动画类以触发动画
+    messageElement.classList.remove('text-container span '); 
+    void messageElement.offsetWidth; 
+    messageElement.classList.add('text-container span '); 
 }
 
 function typeWriterEffect(elementId, text,callback,callbackArg) {

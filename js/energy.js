@@ -1,4 +1,4 @@
-let energyMax = 100; // 初始能量上限为100%
+let energyMax = 100; 
 let energyMin =0;
 
 function changeEnergy(value) {
@@ -12,7 +12,7 @@ function changeEnergy(value) {
         energyValue = energyMin;
     }
     
-    // 更新DOM
+    
     $(".progress-bar").eq(1).attr("aria-valuenow", energyValue);
     updateEnergyIcon();
 }
