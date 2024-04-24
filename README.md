@@ -17,7 +17,7 @@ Challenging
 
 ## Upcoming Features
 Here are the planned updates and new features I intend to implement in the future. Stay tuned for these enhancements!
-- **CustomizedDifficulty Levels:** Introduction of additional difficulty settings to cater to both beginners and advanced players.
+- **Customized Difficulty Levels:** Introduction of additional difficulty settings to cater to both beginners and advanced players.
 - **More Random Events:** Expansion of game events might occur in any process of the game.
 - **Leaderboard Implementation:** Introduction of a leaderboard to showcase top scores and players.
 - **Technical Refinement with Vue.js:** Rebuilding and optimizing the user interface using Vue.js to enhance responsiveness and streamline user interactions.
